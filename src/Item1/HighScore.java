@@ -1,5 +1,5 @@
-package Item1;
-
-public class HighScore extends Grade {
-
-}
+//package Item1;
+//
+//public class HighScore extends Grade {
+//
+//}

@@ -1,4 +1,4 @@
-package Item1;
-
-public class MiddleScore extends Grade {
-}
+//package Item1;
+//
+//public class MiddleScore extends Grade {
+//}
