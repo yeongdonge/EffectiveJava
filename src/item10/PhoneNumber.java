@@ -26,4 +26,17 @@ public class PhoneNumber {
         PhoneNumber pn = (PhoneNumber) o;
         return pn.lineNum == lineNum && pn.prefix == prefix && pn.areaCode == areaCode;
     }
+
+    private int hashCode;
+
+    @Override
+    public int hashCode() {
+        int result = hashCode;
+        if(result == 0) {
+            result = Short.hashCode(areaCode);
+            result = 31 * result + Short.hashCode(prefix);
+            result = 31 * result + Short.hashCode(lineNum);
+        }
+        return result;
+    }
 }
